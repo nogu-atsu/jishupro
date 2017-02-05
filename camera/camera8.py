@@ -107,10 +107,7 @@ cnn = CNN()
 sudoku = sudoku2.reshape(81,32,32,1)
 digits = cnn(sudoku).reshape(9,9)
 print(digits)
-    
 
-digits = "530070000600195000098000060800060003400803001700020006060000280000419005000080079"
-digits = np.array([int(d) for d in digits]).reshape(9,9)
 ans = Solver(digits)
 print digits
 print ans
